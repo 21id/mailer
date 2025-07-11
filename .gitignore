@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# Virtual environments
+.env/
+.venv/
+venv/
+
+# VS Code
+.vscode/
+
+# Pytest
+.cache/
+*.cover
+htmlcov/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.log
+
+# Env files
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled
+*.exe
+*.dll
+
+# MyPy
+.mypy_cache/
+
+# Docker
+*.pid
