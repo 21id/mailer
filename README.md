@@ -10,10 +10,10 @@ Mailer service is a part of [21ID](https://21id.uz) ecosystem, which is an ident
 
 ## How to run locally
 
-1. Firstly, copy .env.sample to .env and edit it, filling all values (I used *nano* just as example).
+1. Firstly, copy .env.example to .env and edit it, filling all values (I used *nano* just as example).
 
     ```
-    cp .env.sample .env 
+    cp .env.example .env 
     nano .env
     ```
 
