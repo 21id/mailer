@@ -1,6 +1,7 @@
 # Templates [Node]
 node_modules
 dist
+app/templates/files/*.html
 
 # Python
 __pycache__/
