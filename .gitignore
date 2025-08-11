@@ -1,3 +1,7 @@
+# Templates [Node]
+node_modules
+templates/dist/*.html
+
 # Python
 __pycache__/
 *.py[cod]

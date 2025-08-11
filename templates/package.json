@@ -1,0 +1,19 @@
+{
+  "name": "templates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mjml --watch src/*.mjml -o dist/",
+    "build": "mjml -r src/*.mjml -o dist/",
+    "clear": "rm -rf dist/*",
+    "dist": "cp -r dist/* ../app/templates/files/",
+    "all": "npm run clear && npm run build && npm run dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mjml": "^4.7.1"
+  }
+}

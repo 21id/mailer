@@ -26,8 +26,6 @@ Mailer service is a part of [21ID](https://21id.uz) ecosystem, which is an ident
         mailer:
             image: ghcr.io/21id/mailer:latest
             restart: unless-stopped
-            volumes:
-                - ./<your_template_folder>:/app/app/templates/files
             environment:
                 - SMTP_HOST=smtp.example.com
                 - SMTP_PORT=465
@@ -54,6 +52,23 @@ Mailer service is a part of [21ID](https://21id.uz) ecosystem, which is an ident
     docker compose up -d
     ```
 4. Test it out via `amqp-tools` or REST API (see `localhost:8000/redoc` for documentation)
+
+## Data structures
+By default, AMQP consumer listens to the queue specified in the .env file (`AMQP_QUEUE`) and expects a message with the EmailRequest structure:
+```json
+{
+    "to": "string",
+    "subject": "string",
+    "template": "string",
+    "context": {
+        ["key"]: "string"
+    }
+}
+```
+
+The consumer is also duplicated by the REST server for debugging and use in environments where sending messages via the AMQP is not possible.
+
+For an extended description of the fields, visit the Swagger/Redoc documentation (Schemas section)
 
 ## Contributing
 We'd love for you to create pull requests for this project from the development branch. Latest releases are created from the main branch.
