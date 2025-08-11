@@ -77,3 +77,5 @@ We'd love for you to create pull requests for this project from the development 
 - [21ID Telegram Channel](https://t.me/ident21)
 - [Emil aka. lunnaholy aka. kristana](https://t.me/lunnaholy)
 - [Aleksey aka. megaplov aka. daemonpr](https://t.me/megaplov)
+
+Made with ❤️ at School 21
