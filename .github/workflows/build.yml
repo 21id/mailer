@@ -31,6 +31,10 @@ jobs:
             type=raw,value=latest
             type=raw,value=${{ github.ref_name }}
 
+      - name: Set version
+        id: version
+        run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
@@ -38,3 +42,5 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            VERSION=${{ steps.version.outputs.sha_short }}
