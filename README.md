@@ -61,7 +61,7 @@ By default, AMQP consumer listens to the queue specified in the .env file (`AMQP
     "subject": "string",
     "template": "string",
     "context": {
-        ["key"]: "string"
+        "key": "string"
     }
 }
 ```
