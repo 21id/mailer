@@ -7,7 +7,8 @@
     "build": "mkdir -p dist && mjml -r src/*.mjml -o dist/",
     "clear": "rm -rf dist/*",
     "dist": "cp -r dist/* ../app/templates/files/",
-    "all": "npm run clear && npm run build && npm run dist"
+    "all": "npm run clear && npm run build",
+    "all:dist": "npm run all && npm run dist"
   },
   "keywords": [],
   "author": "",
