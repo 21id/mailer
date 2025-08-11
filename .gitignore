@@ -1,6 +1,6 @@
 # Templates [Node]
 node_modules
-templates/dist/*.html
+dist
 
 # Python
 __pycache__/
