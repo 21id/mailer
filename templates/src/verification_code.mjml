@@ -1,88 +1,142 @@
 <mjml>
   <mj-head>
-
     <mj-html-attributes>
-      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="text-color" text-color="#000000"></mj-html-attribute>
-      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="font-family" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif"></mj-html-attribute>
-      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="font-size" font-size="14px"></mj-html-attribute>
-      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="line-height" line-height="1.7"></mj-html-attribute>
-      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="font-weight" font-weight="400"></mj-html-attribute>
-      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="responsive" responsive="true"></mj-html-attribute>
-
+      <mj-html-attribute
+        class="easy-email"
+        attribute-name="text-color"
+        text-color="#000000"
+      />
+      <mj-html-attribute
+        class="easy-email"
+        attribute-name="font-family"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+      />
+      <mj-html-attribute class="easy-email" attribute-name="font-size" font-size="14px" />
+      <mj-html-attribute class="easy-email" attribute-name="line-height" line-height="1.7" />
+      <mj-html-attribute class="easy-email" attribute-name="font-weight" font-weight="400" />
+      <mj-html-attribute class="easy-email" attribute-name="responsive" responsive="true" />
     </mj-html-attributes>
 
     <mj-breakpoint width="480px" />
 
     <mj-attributes>
-      <mj-text font-size="14px" />
-      <mj-text line-height="1.7" />
-      <mj-text font-weight="400" />
-      <mj-all font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif" />
-      <mj-text font-size="14px" />
-      <mj-text color="#000000" />
-      <mj-text line-height="1.7" />
-      <mj-text font-weight="400" />
-
+      <mj-all
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+      />
+      <mj-text font-size="14px" color="#000000" line-height="1.7" font-weight="400" />
     </mj-attributes>
   </mj-head>
+
   <mj-body background-color="#F9F9F9" width="600px">
-    <mj-section padding="0px 0px 0px 0px" border="none" direction="ltr" text-align="left" background-repeat="repeat" background-size="auto" background-position="top center">
-      <mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px">
-        <mj-image align="center" height="98px" src="https://6a84dd65-6bf6-4265-b12e-3b8b28413b7a.srvstatic.uz/mail/logo.png" width="281px" padding="32px 0px 0px 0px"></mj-image>
+    <mj-section padding="0">
+      <mj-column padding="0" vertical-align="top">
+        <mj-image
+          src="https://6a84dd65-6bf6-4265-b12e-3b8b28413b7a.srvstatic.uz/mail/logo.png"
+          width="281px"
+          height="98px"
+          padding="32px 0 0 0"
+          align="center"
+        />
       </mj-column>
     </mj-section>
-    <mj-section background-repeat="repeat" background-size="auto" background-position="top center" border="none" direction="ltr" text-align="left" padding="0px 0px 0px 0px">
-      <mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px">
-        <mj-spacer height="20px"></mj-spacer>
+
+    <mj-section padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" />
       </mj-column>
     </mj-section>
-    <mj-wrapper border="none" direction="ltr" text-align="center" background-color="#FFFFFF" padding="20px 0px 20px 0px" border-radius="16px">
-      <mj-section background-repeat="repeat" background-size="auto" background-position="top center" border="none" direction="ltr" text-align="left" padding="0px 0px 0px 0px">
-        <mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px">
-          <mj-text align="left" font-size="16px" padding="10px 25px 10px 25px"><b>Привет, {{ username }}!</b></mj-text>
-        </mj-column>
-      </mj-section>
-      <mj-section background-repeat="repeat" background-size="auto" background-position="top center" border="none" direction="ltr" text-align="left" padding="0px 0px 0px 0px">
-        <mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px">
-          <mj-text align="left" padding="10px 25px 10px 25px">Для твоего никннейма была запрошена верификация на платформе 21ID.<div><br></div>
-            <div>Верификация выполняется с целью привязки твоего школьного никнейма к аккаунту на платформе 21ID, с помощью которого ты сможешь авторизоваться в любом стороннем сервисе, предусматривающем эту возможность.</div>
-            <div><br></div>
-            <div>Введи код ниже в боте для продолжения верификации:</div>
+
+    <mj-wrapper
+      background-color="#FFFFFF"
+      border-radius="16px"
+      padding="20px 0"
+      text-align="center"
+      direction="ltr"
+    >
+      <mj-section padding="0" text-align="left">
+        <mj-column padding="0">
+          <mj-text font-size="16px" padding="10px 25px" align="left">
+            <b>Привет, {{ username }}!</b>
           </mj-text>
-          <mj-text padding="10px 25px 10px 25px" align="center" font-size="24px" font-weight="bold" color="#4F5660" container-background-color="#F9F9F9" font-style="normal">{{ code }}</mj-text>
         </mj-column>
       </mj-section>
-      <mj-section padding="0px" text-align="left">
-        <mj-column>
-          <mj-text padding="10px 25px 10px 25px" align="left">Код верификации лучше никому не передавать и использовать только самому.</mj-text>
+
+      <mj-section padding="0" text-align="left">
+        <mj-column padding="0">
+          <mj-text padding="10px 25px" align="left">
+            Для твоего никнейма была запрошена верификация на платформе 21ID.
+            <br /><br />
+            Верификация выполняется с целью привязки твоего школьного никнейма к
+            аккаунту на платформе 21ID, с помощью которого ты сможешь авторизоваться
+            в любом стороннем сервисе, предусматривающем эту возможность.
+            <br /><br />
+            Введи код ниже в боте для продолжения верификации:
+          </mj-text>
+          <mj-text
+            align="center"
+            font-size="24px"
+            font-weight="bold"
+            color="#4F5660"
+            padding="0"
+          >
+            {{ code }}
+          </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section padding="0px" text-align="left">
-        <mj-column>
-          <mj-text padding="10px 25px 10px 25px" align="left">Если ты не отправлял этот запрос - просто проигнорируй это письмо.</mj-text>
+
+      <mj-section padding="0" text-align="left">
+        <mj-column padding="0">
+          <mj-text padding="10px 25px" align="left">
+            Код верификации лучше никому не передавать и использовать только самому.
+          </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section padding="0px" text-align="left">
-        <mj-column>
-          <mj-divider border-width="1px" border-style="solid" border-color="#C9CCCF" padding="10px 0px 10px 0px"></mj-divider>
+
+      <mj-section padding="0" text-align="left">
+        <mj-column padding="0">
+          <mj-text padding="10px 25px" align="left">
+            Если ты не отправлял этот запрос - просто проигнорируй это письмо.
+          </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section padding="0px" text-align="left">
-        <mj-column>
-          <mj-button align="center" background-color="#FFFFFF" color="#4a90e2" font-weight="bold" border-radius="3px" padding="10px 25px 10px 25px" inner-padding="10px 25px 10px 25px" line-height="120%" target="_blank" vertical-align="middle" border="none" text-align="center" href="https://t.me/ident21">Наш Telegram</mj-button>
+
+      <mj-section padding="0" text-align="left">
+        <mj-column padding="0">
+          <mj-divider border-width="1px" border-style="solid" border-color="#C9CCCF" padding="10px 0" />
         </mj-column>
       </mj-section>
-      <mj-section padding="0px" text-align="left">
-        <mj-column>
-          <mj-text padding="10px 25px 10px 25px" align="left">
-            <div style="text-align: center;">with &lt;3 from school 21</div>
+
+      <mj-section padding="0" text-align="left">
+        <mj-column padding="0">
+          <mj-button
+            href="https://t.me/ident21"
+            background-color="#FFFFFF"
+            color="#4a90e2"
+            font-weight="bold"
+            border-radius="3px"
+            font-size="16px"
+            padding="10px 25px"
+            inner-padding="10px 25px"
+            target="_blank"
+            align="center"
+          >
+            Наш Telegram
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0" text-align="left">
+        <mj-column padding="0">
+          <mj-text padding="10px 25px" align="center">
+            with ❤️ from school 21
           </mj-text>
         </mj-column>
       </mj-section>
     </mj-wrapper>
-    <mj-section padding="0px" text-align="left">
-      <mj-column>
-        <mj-spacer height="64px"></mj-spacer>
+
+    <mj-section padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="64px" />
       </mj-column>
     </mj-section>
   </mj-body>
